@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" width="400" height="520">
+  <defs>
+    <!-- Gradient for hair shine -->
+    <linearGradient id="hairShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A0703C"/>
+      <stop offset="40%" stop-color="#7B5228"/>
+      <stop offset="60%" stop-color="#A0703C"/>
+      <stop offset="100%" stop-color="#7B5228"/>
+    </linearGradient>
+    <radialGradient id="eyeGrad" cx="45%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#8B4513"/>
+      <stop offset="50%" stop-color="#5D3110"/>
+      <stop offset="100%" stop-color="#3E1E08"/>
+    </radialGradient>
+    <radialGradient id="eyeGrad2" cx="55%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#8B4513"/>
+      <stop offset="50%" stop-color="#5D3110"/>
+      <stop offset="100%" stop-color="#3E1E08"/>
+    </radialGradient>
+    <linearGradient id="blouseGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F0F0F0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ===== BODY ===== -->
+  <!-- Chibi body - small compared to head -->
+
+  <!-- Skirt -->
+  <path d="M140 355 Q130 400 118 440 Q118 445 125 445 L275 445 Q282 445 282 440 Q270 400 260 355Z" fill="#06C755" stroke="#04A347" stroke-width="2"/>
+  <!-- Skirt folds -->
+  <path d="M160 360 L155 440" fill="none" stroke="#04A347" stroke-width="1.5" opacity="0.3"/>
+  <path d="M200 358 L200 442" fill="none" stroke="#04A347" stroke-width="1.5" opacity="0.3"/>
+  <path d="M240 360 L245 440" fill="none" stroke="#04A347" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Legs -->
+  <path d="M160 440 L155 490 Q155 500 165 500 L175 500 Q185 500 183 490 L178 440Z" fill="#FFDCB5" stroke="#E8C09A" stroke-width="1.5"/>
+  <path d="M222 440 L217 490 Q217 500 227 500 L237 500 Q247 500 245 490 L240 440Z" fill="#FFDCB5" stroke="#E8C09A" stroke-width="1.5"/>
+
+  <!-- Shoes -->
+  <ellipse cx="168" cy="503" rx="22" ry="10" fill="#E8548E" stroke="#D14080" stroke-width="1.5"/>
+  <ellipse cx="168" cy="500" rx="18" ry="5" fill="#F06EA0"/>
+  <ellipse cx="232" cy="503" rx="22" ry="10" fill="#E8548E" stroke="#D14080" stroke-width="1.5"/>
+  <ellipse cx="232" cy="500" rx="18" ry="5" fill="#F06EA0"/>
+
+  <!-- Blouse body -->
+  <path d="M148 300 Q140 330 140 355 L260 355 Q260 330 252 300Z" fill="url(#blouseGrad)" stroke="#DDD" stroke-width="1.5"/>
+
+  <!-- Left arm (pointing) -->
+  <path d="M148 310 Q110 320 70 305 Q60 302 55 308" fill="none" stroke="#FFDCB5" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Left hand pointing -->
+  <circle cx="52" cy="306" r="12" fill="#FFDCB5" stroke="#E8C09A" stroke-width="1"/>
+  <!-- Pointing finger -->
+  <line x1="42" y1="304" x2="28" y2="300" stroke="#FFDCB5" stroke-width="7" stroke-linecap="round"/>
+  <!-- Left sleeve -->
+  <ellipse cx="148" cy="312" rx="18" ry="14" fill="url(#blouseGrad)" stroke="#DDD" stroke-width="1.5"/>
+
+  <!-- Right arm (waving) -->
+  <path d="M252 310 Q290 290 315 240 Q320 230 325 235" fill="none" stroke="#FFDCB5" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Right hand open -->
+  <circle cx="323" cy="232" r="13" fill="#FFDCB5" stroke="#E8C09A" stroke-width="1"/>
+  <!-- Fingers spread -->
+  <line x1="315" y1="222" x2="310" y2="212" stroke="#FFDCB5" stroke-width="6" stroke-linecap="round"/>
+  <line x1="322" y1="219" x2="320" y2="208" stroke="#FFDCB5" stroke-width="6" stroke-linecap="round"/>
+  <line x1="329" y1="220" x2="330" y2="209" stroke="#FFDCB5" stroke-width="6" stroke-linecap="round"/>
+  <line x1="335" y1="225" x2="340" y2="216" stroke="#FFDCB5" stroke-width="5" stroke-linecap="round"/>
+  <!-- Right sleeve -->
+  <ellipse cx="252" cy="312" rx="18" ry="14" fill="url(#blouseGrad)" stroke="#DDD" stroke-width="1.5"/>
+
+  <!-- Collar -->
+  <path d="M168 295 L200 320 L232 295" fill="none" stroke="#DDD" stroke-width="1.5"/>
+
+  <!-- Green ribbon bow -->
+  <path d="M180 300 Q165 285 170 275 Q175 268 185 278 L195 295Z" fill="#06C755" stroke="#04A347" stroke-width="1.5"/>
+  <path d="M220 300 Q235 285 230 275 Q225 268 215 278 L205 295Z" fill="#06C755" stroke="#04A347" stroke-width="1.5"/>
+  <circle cx="200" cy="298" r="8" fill="#06C755" stroke="#04A347" stroke-width="1.5"/>
+  <circle cx="200" cy="298" r="4" fill="#08E060"/>
+  <!-- Ribbon tail -->
+  <path d="M195 305 L188 340 L198 330Z" fill="#06C755" stroke="#04A347" stroke-width="1"/>
+  <path d="M205 305 L212 340 L202 330Z" fill="#06C755" stroke="#04A347" stroke-width="1"/>
+
+  <!-- ===== HEAD (Big chibi head) ===== -->
+
+  <!-- Hair back -->
+  <ellipse cx="200" cy="165" rx="120" ry="130" fill="url(#hairShine)"/>
+
+  <!-- Face -->
+  <ellipse cx="200" cy="180" rx="100" ry="105" fill="#FFDCB5" stroke="#E8C09A" stroke-width="1.5"/>
+
+  <!-- Hair top/bangs - fluffy chibi style -->
+  <path d="M80 155 Q85 60 150 35 Q175 25 200 22 Q225 25 250 35 Q315 60 320 155
+           Q310 130 290 115 Q275 108 260 118 Q248 100 235 108 Q222 95 210 105
+           Q200 92 190 105 Q178 95 165 108 Q152 100 140 118 Q125 108 110 115
+           Q90 130 80 155Z"
+        fill="url(#hairShine)" stroke="#6B4520" stroke-width="1.5"/>
+
+  <!-- Hair side pieces -->
+  <path d="M78 160 Q68 220 72 290 Q75 298 82 290 Q80 230 85 170Z" fill="url(#hairShine)" stroke="#6B4520" stroke-width="1"/>
+  <path d="M322 160 Q332 220 328 290 Q325 298 318 290 Q320 230 315 170Z" fill="url(#hairShine)" stroke="#6B4520" stroke-width="1"/>
+
+  <!-- Hair shine highlights -->
+  <path d="M140 55 Q170 42 200 50 Q230 42 260 55" fill="none" stroke="#C89550" stroke-width="3" opacity="0.5" stroke-linecap="round"/>
+  <path d="M150 70 Q180 60 210 68" fill="none" stroke="#C89550" stroke-width="2" opacity="0.4" stroke-linecap="round"/>
+
+  <!-- ===== EYES - Large anime chibi style ===== -->
+
+  <!-- Left eye white -->
+  <ellipse cx="160" cy="195" rx="28" ry="32" fill="#fff" stroke="#333" stroke-width="2"/>
+  <!-- Left iris -->
+  <ellipse cx="163" cy="200" rx="20" ry="25" fill="url(#eyeGrad)"/>
+  <!-- Left pupil -->
+  <ellipse cx="163" cy="203" rx="12" ry="16" fill="#2C1810"/>
+  <!-- Left eye sparkles -->
+  <circle cx="172" cy="188" r="8" fill="#fff"/>
+  <circle cx="155" cy="210" r="5" fill="#fff" opacity="0.7"/>
+  <circle cx="170" cy="198" r="3" fill="#fff" opacity="0.5"/>
+  <!-- Left lower eyelash -->
+  <path d="M135 220 Q148 228 170 225" fill="none" stroke="#333" stroke-width="1.5"/>
+
+  <!-- Right eye white -->
+  <ellipse cx="245" cy="195" rx="28" ry="32" fill="#fff" stroke="#333" stroke-width="2"/>
+  <!-- Right iris -->
+  <ellipse cx="242" cy="200" rx="20" ry="25" fill="url(#eyeGrad2)"/>
+  <!-- Right pupil -->
+  <ellipse cx="242" cy="203" rx="12" ry="16" fill="#2C1810"/>
+  <!-- Right eye sparkles -->
+  <circle cx="251" cy="188" r="8" fill="#fff"/>
+  <circle cx="234" cy="210" r="5" fill="#fff" opacity="0.7"/>
+  <circle cx="249" cy="198" r="3" fill="#fff" opacity="0.5"/>
+  <!-- Right lower eyelash -->
+  <path d="M230 225 Q252 228 268 220" fill="none" stroke="#333" stroke-width="1.5"/>
+
+  <!-- Upper eyelashes - thick anime style -->
+  <path d="M130 170 Q138 160 150 165 Q158 158 168 165 Q178 155 190 168" fill="none" stroke="#333" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M215 168 Q225 155 235 165 Q245 158 255 165 Q265 160 272 170" fill="none" stroke="#333" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Eyebrows -->
+  <path d="M140 155 Q160 145 180 155" fill="none" stroke="#6B4520" stroke-width="3" stroke-linecap="round"/>
+  <path d="M225 155 Q245 145 265 155" fill="none" stroke="#6B4520" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Nose - tiny dot -->
+  <circle cx="202" cy="230" r="3" fill="#E8C09A"/>
+
+  <!-- Mouth - big cheerful open smile -->
+  <path d="M170 248 Q185 272 200 272 Q215 272 230 248" fill="#E84060" stroke="#D03050" stroke-width="2" stroke-linecap="round"/>
+  <!-- Tongue -->
+  <ellipse cx="200" cy="265" rx="15" ry="10" fill="#FF7090"/>
+  <!-- Teeth hint -->
+  <path d="M175 250 L225 250" fill="none" stroke="#fff" stroke-width="2"/>
+
+  <!-- Blush marks - big pink circles -->
+  <ellipse cx="125" cy="228" rx="20" ry="12" fill="#FFB0C0" opacity="0.6"/>
+  <ellipse cx="278" cy="228" rx="20" ry="12" fill="#FFB0C0" opacity="0.6"/>
+
+  <!-- Blush lines -->
+  <g opacity="0.3" stroke="#FF8090" stroke-width="1.5" stroke-linecap="round">
+    <line x1="115" y1="224" x2="112" y2="228"/>
+    <line x1="120" y1="222" x2="118" y2="228"/>
+    <line x1="125" y1="224" x2="124" y2="228"/>
+    <line x1="268" y1="224" x2="266" y2="228"/>
+    <line x1="273" y1="222" x2="272" y2="228"/>
+    <line x1="278" y1="224" x2="278" y2="228"/>
+  </g>
+
+  <!-- ===== SPEECH BUBBLE ===== -->
+  <rect x="245" y="25" width="148" height="65" rx="16" fill="#06C755" stroke="#04A347" stroke-width="2"/>
+  <polygon points="258,90 275,90 248,110" fill="#06C755" stroke="#04A347" stroke-width="2"/>
+  <rect x="248" y="84" width="20" height="8" fill="#06C755"/>
+  <text x="319" y="52" text-anchor="middle" font-family="'Noto Sans JP', sans-serif" font-size="16" fill="#fff" font-weight="bold">なんでも</text>
+  <text x="319" y="76" text-anchor="middle" font-family="'Noto Sans JP', sans-serif" font-size="16" fill="#fff" font-weight="bold">聞いてね！✨</text>
+
+  <!-- Sparkle effects around character -->
+  <g fill="#FFD700" opacity="0.6">
+    <polygon points="50,180 54,190 64,190 56,196 59,206 50,200 41,206 44,196 36,190 46,190" transform="scale(0.6) translate(30,50)"/>
+    <polygon points="50,180 54,190 64,190 56,196 59,206 50,200 41,206 44,196 36,190 46,190" transform="scale(0.5) translate(680,100)"/>
+    <polygon points="50,180 54,190 64,190 56,196 59,206 50,200 41,206 44,196 36,190 46,190" transform="scale(0.4) translate(200,900)"/>
+  </g>
+</svg>
