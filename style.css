@@ -7,14 +7,7 @@
 
 html { scroll-behavior: smooth; font-size: 16px; }
 
-body {
-    font-family: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", sans-serif;
-    line-height: 1.7;
-    color: #444;
-    background-color: #fcfdfc;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-}
+
 
 a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
 img { max-width: 100%; height: auto; display: block; }
@@ -24,16 +17,110 @@ ul { list-style: none; }
 :root {
     --color-primary: #06C755;
     --color-primary-light: #e8f5e9;
-    --color-accent: #FF8E9E; /* Kawaii accent */
-    --color-text: #333;
-    --color-text-light: #777;
-    --color-bg: #fcfdfc;
+    --color-accent: #FF8E9E; /* Still kept for subtle accents */
+    --color-text: #2c3e50; /* More sophisticated dark blue-gray */
+    --color-text-light: #596b7d;
+    --color-bg: #f8fafc; /* Cool styling */
     --color-white: #ffffff;
-    --shadow-soft: 0 10px 40px rgba(6, 199, 85, 0.1);
-    --shadow-float: 0 16px 32px rgba(0, 0, 0, 0.08);
+    --shadow-soft: 0 10px 40px rgba(6, 199, 85, 0.08);
+    --shadow-float: 0 20px 40px rgba(44, 62, 80, 0.06);
     --radius-lg: 32px;
     --radius-md: 20px;
     --radius-sm: 12px;
+}
+
+body {
+    font-family: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", sans-serif;
+    line-height: 1.7;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    padding: 60px 0 80px;
+    background: radial-gradient(circle at 10% 20%, #eefbf1 0%, rgba(255, 255, 255, 0) 50%),
+                radial-gradient(circle at 90% 80%, #f0f4f8 0%, rgba(255, 255, 255, 0) 50%);
+    overflow: hidden;
+}
+
+/* Background Decoration for Elegance */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50px; left: -50px;
+    width: 300px; height: 300px;
+    background:  url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2306C755' fill-opacity='0.05' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+    mask-image: radial-gradient(white, transparent);
+    z-index: -1;
+}
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+    font-weight: 800;
+    font-size: 0.9rem;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
+}
+
+.hero-title {
+    margin-bottom: 32px;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+}
+
+.title-sub {
+    font-size: clamp(1.4rem, 2vw, 2.0rem);
+    font-weight: 700;
+    color: var(--color-text);
+    display: block; /* Force new line on PC */
+    margin-bottom: 8px;
+}
+
+.title-main {
+    font-size: clamp(2.4rem, 5vw, 4.2rem);
+    font-weight: 900;
+    line-height: 1.1;
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.accent {
+    color: var(--color-primary); /* Keep main green */
+    position: relative;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+/* Underline decoration - more stylish */
+.accent::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background: rgba(6, 199, 85, 0.15); /* More subtle */
+    z-index: -1;
+    border-radius: 4px;
+    transform: skewX(-10deg);
 }
 
 /* --- Container --- */
@@ -133,65 +220,7 @@ ul { list-style: none; }
 }
 .nav a:hover { color: var(--color-primary); }
 
-/* --- Hero --- */
-.hero {
-    padding: 80px 0 100px;
-    position: relative;
-    overflow: hidden;
-    /* Stylish Gradient Background */
-    background: radial-gradient(circle at 10% 20%, rgba(232, 245, 233, 0.8) 0%, rgba(255, 255, 255, 0) 40%),
-                radial-gradient(circle at 90% 80%, rgba(255, 240, 245, 0.6) 0%, rgba(255, 255, 255, 0) 40%);
-}
 
-.hero-inner {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-}
-
-.hero-text { flex: 1; }
-
-.hero-badge {
-    display: inline-block;
-    background: var(--color-primary-light);
-    color: var(--color-primary);
-    font-weight: 800;
-    font-size: 0.9rem;
-    padding: 6px 16px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-
-.hero-title {
-    font-size: clamp(1.8rem, 5vw, 3.2rem); /* Responsive font size */
-    line-height: 1.4;
-    margin-bottom: 24px;
-    font-weight: 900;
-    letter-spacing: -0.02em;
-}
-
-.inline-block {
-    display: inline-block;
-}
-
-.accent {
-    color: var(--color-primary);
-    position: relative;
-    z-index: 1;
-    white-space: nowrap; /* Keep accent text together */
-}
-
-.accent::after {
-    content: "";
-    position: absolute;
-    bottom: 0.1em;
-    left: 0;
-    width: 100%;
-    height: 0.4em;
-    background: rgba(6, 199, 85, 0.15);
-    z-index: -1;
-    transform: rotate(-1deg);
-}
 
 .hero-desc {
     font-size: 1.1rem;
